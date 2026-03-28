@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subhash Chandra Verma | Competitive Programming Engineer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div id="progress-bar"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#home" class="nav-logo">scv.dev</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about"      data-section="about">about</a></li>
+      <li><a href="#skills"     data-section="skills">skills</a></li>
+      <li><a href="#experience" data-section="experience">experience</a></li>
+      <li><a href="#education"  data-section="education">education</a></li>
+      <li><a href="#projects"   data-section="projects">projects</a></li>
+      <li><a href="#contact"    data-section="contact">contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about"      onclick="smoothTo('about');return false">About</a>
+    <a href="#skills"     onclick="smoothTo('skills');return false">Skills</a>
+    <a href="#experience" onclick="smoothTo('experience');return false">Experience</a>
+    <a href="#education"  onclick="smoothTo('education');return false">Education</a>
+    <a href="#projects"   onclick="smoothTo('projects');return false">Projects</a>
+    <a href="#contact"    onclick="smoothTo('contact');return false">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="home">
+    <div class="hero-inner">
+      <div>
+        <p class="hero-tag">competitive programming engineer</p>
+        <h1 class="hero-name">Subhash<br>Chandra <span class="accent">Verma</span></h1>
+        <p class="hero-title"><span id="typed-text"></span></p>
+        <p class="hero-bio">
+          Full-stack developer &amp; competitive programmer with experience at
+          <strong>HeyCoach</strong> and <strong>Coding Ninjas</strong>.
+          Passionate about DSA, building efficient systems, and teaching complex algorithms simply.
+        </p>
+        <div class="hero-ctas">
+          <button class="btn-primary" onclick="smoothTo('projects')">View Projects →</button>
+          <button class="btn-outline"  onclick="smoothTo('contact')">Get In Touch</button>
+        </div>
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/subhash-chandra-verma/" target="_blank" title="LinkedIn">in</a>
+          <a href="https://leetcode.com/subhash-chandra-verma/"         target="_blank" title="LeetCode">lc</a>
+          <a href="https://twitter.com/scvofficiaI"                      target="_blank" title="Twitter">tw</a>
+          <a href="https://github.com/subhash202122"                     target="_blank" title="GitHub">gh</a>
+        </div>
+      </div>
+
+      <div class="hero-avatar-wrap">
+        <div class="avatar-ring">
+          <div class="avatar-dot"></div>
+          <div class="avatar-dot2"></div>
+        </div>
+        <img
+          src="profile.jpg"
+          alt="Subhash Chandra Verma"
+          class="hero-avatar"
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <p class="section-label">About Me</p>
+      <h2 class="section-title">Who <span>I Am</span></h2>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p>Hello! I'm <strong>Subhash Chandra Verma</strong>, a B.Tech graduate from
+            <strong>Harcourt Butler Technical University (HBTU), Kanpur</strong> (2018–2022).
+            What started as curiosity for problem-solving grew into a deep passion for competitive programming and software engineering.</p>
+          <p>I currently work as a <strong>Competitive Programming Engineer at HeyCoach</strong>, designing and curating algorithm challenges for thousands of developers.
+            Previously I was a <strong>Teaching Assistant at Coding Ninjas</strong>, helping students conquer Data Structures &amp; Algorithms.</p>
+          <p>Beyond CP, I build with the <strong>MERN stack</strong> — crafting elegant, performant web applications with React.js on the front end and Node.js on the back end.</p>
+        </div>
+        <div class="stats-grid reveal-right">
+          <div class="stat-card"><div class="stat-num">2+</div><div class="stat-label">Years Experience</div></div>
+          <div class="stat-card"><div class="stat-num">500+</div><div class="stat-label">LeetCode Problems</div></div>
+          <div class="stat-card"><div class="stat-num">2</div><div class="stat-label">Companies Worked At</div></div>
+          <div class="stat-card"><div class="stat-num">∞</div><div class="stat-label">Passion for DSA</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <p class="section-label">Skills</p>
+      <h2 class="section-title">Tech <span>Stack</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-category reveal">
+          <h3>Languages</h3>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">Java</span><span class="skill-pct">90%</span></div><div class="skill-bar"><div class="skill-fill" data-pct="90"></div></div></div>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">JavaScript</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill" data-pct="85"></div></div></div>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">HTML / CSS</span><span class="skill-pct">92%</span></div><div class="skill-bar"><div class="skill-fill" data-pct="92"></div></div></div>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">SQL</span><span class="skill-pct">78%</span></div><div class="skill-bar"><div class="skill-fill" data-pct="78"></div></div></div>
+        </div>
+
+        <div class="skill-category reveal" style="transition-delay:.1s">
+          <h3>Frontend</h3>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">React.js</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill" data-pct="85"></div></div></div>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">AngularJS</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill" data-pct="75"></div></div></div>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">Vue.js</span><span class="skill-pct">70%</span></div><div class="skill-bar"><div class="skill-fill" data-pct="70"></div></div></div>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">Tailwind / Bootstrap</span><span class="skill-pct">88%</span></div><div class="skill-bar"><div class="skill-fill" data-pct="88"></div></div></div>
+        </div>
+
+        <div class="skill-category reveal" style="transition-delay:.2s">
+          <h3>Backend &amp; Tools</h3>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">Node.js</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill" data-pct="80"></div></div></div>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">MongoDB</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill" data-pct="75"></div></div></div>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">MySQL</span><span class="skill-pct">78%</span></div><div class="skill-bar"><div class="skill-fill" data-pct="78"></div></div></div>
+          <div class="skill-item"><div class="skill-row"><span class="skill-name">Figma</span><span class="skill-pct">70%</span></div><div class="skill-bar"><div class="skill-fill" data-pct="70"></div></div></div>
+        </div>
+
+        <div class="skill-category reveal" style="transition-delay:.3s">
+          <h3>Competitive Programming</h3>
+          <div class="tags">
+            <span class="tag">Data Structures</span><span class="tag">Algorithms</span>
+            <span class="tag">Dynamic Programming</span><span class="tag">Graph Theory</span>
+            <span class="tag">Binary Search</span><span class="tag">Greedy</span>
+            <span class="tag">Segment Trees</span><span class="tag">Bit Manipulation</span>
+            <span class="tag">LeetCode</span><span class="tag">Problem Curating</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-inner">
+      <p class="section-label">Experience</p>
+      <h2 class="section-title">Work <span>History</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <p class="tl-date">DEC 2023 — PRESENT</p>
+          <h3 class="tl-role">Competitive Programming Engineer</h3>
+          <p class="tl-company">HeyCoach</p>
+          <ul class="tl-desc">
+            <li>Design and curate competitive programming problems for advanced algorithm courses</li>
+            <li>Mentor developers on DSA concepts, time complexity, and optimal solutions</li>
+            <li>Create structured learning paths for FAANG-level interview preparation</li>
+            <li>Collaborate with educators to build engaging technical content for thousands of learners</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item reveal">
+          <p class="tl-date">FEB 2022 — NOV 2023</p>
+          <h3 class="tl-role">Teaching Assistant — Competitive Programming</h3>
+          <p class="tl-company">Coding Ninjas</p>
+          <ul class="tl-desc">
+            <li>Assisted instructors in teaching Data Structures &amp; Algorithms to 1000+ students</li>
+            <li>Conducted doubt-clearing sessions on complex topics like graphs, trees, and DP</li>
+            <li>Reviewed student code and provided structured feedback on optimization</li>
+            <li>Helped students crack placements at top product-based companies</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="section-inner">
+      <p class="section-label">Education</p>
+      <h2 class="section-title">Academic <span>Background</span></h2>
+
+      <div class="edu-card reveal">
+        <div class="edu-icon">🎓</div>
+        <div>
+          <p class="edu-degree">Bachelor of Technology</p>
+          <p class="edu-school">Harcourt Butler Technical University (HBTU), Kanpur</p>
+          <p class="edu-year">2018 — 2022 &nbsp;|&nbsp; School of Chemical Technology</p>
+        </div>
+      </div>
+
+      <div class="edu-card reveal" style="transition-delay:.15s">
+        <div class="edu-icon">💻</div>
+        <div>
+          <p class="edu-degree">Self-Taught Competitive Programmer &amp; Full-Stack Developer</p>
+          <p class="edu-school">Coding Ninjas · LeetCode · Online Resources</p>
+          <p class="edu-year">2020 — Present &nbsp;|&nbsp; Java · DSA · MERN Stack</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <p class="section-label">Projects</p>
+      <h2 class="section-title">Things I've <span>Built</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <p class="project-num">Project 01</p>
+          <h3 class="project-title">Portfolio Website</h3>
+          <p class="project-desc">A personal portfolio showcasing skills, experience, education, and projects with custom CSS animations and smooth transitions.</p>
+          <div class="project-stack">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay:.1s">
+          <p class="project-num">Project 02</p>
+          <h3 class="project-title">DSA Problem Curator</h3>
+          <p class="project-desc">Curated hundreds of competitive programming problems with difficulty levels, hints, and editorial content for HeyCoach learners.</p>
+          <div class="project-stack">
+            <span class="project-tag">Java</span>
+            <span class="project-tag">DSA</span>
+            <span class="project-tag">Problem Design</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay:.2s">
+          <p class="project-num">Project 03</p>
+          <h3 class="project-title">Full-Stack Web App</h3>
+          <p class="project-desc">MERN stack web application with RESTful API, user authentication, MongoDB database, and responsive React.js frontend.</p>
+          <div class="project-stack">
+            <span class="project-tag">React.js</span>
+            <span class="project-tag">Node.js</span>
+            <span class="project-tag">MongoDB</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements">
+    <div class="section-inner">
+      <p class="section-label">Achievements</p>
+      <h2 class="section-title">Notable <span>Wins</span></h2>
+      <div class="ach-grid">
+        <div class="ach-card reveal"><div class="ach-icon">🏆</div><div><p class="ach-title">500+ LeetCode Problems Solved</p><p class="ach-desc">Consistent solving across easy, medium, and hard covering all major DS/Algo topics.</p></div></div>
+        <div class="ach-card reveal" style="transition-delay:.1s"><div class="ach-icon">🎯</div><div><p class="ach-title">CP Engineer at HeyCoach</p><p class="ach-desc">Designed high-quality competitive challenges used by thousands for FAANG prep.</p></div></div>
+        <div class="ach-card reveal" style="transition-delay:.2s"><div class="ach-icon">👨‍🏫</div><div><p class="ach-title">1000+ Students Mentored</p><p class="ach-desc">Guided students at Coding Ninjas to master DSA and land top product company jobs.</p></div></div>
+        <div class="ach-card reveal" style="transition-delay:.3s"><div class="ach-icon">🚀</div><div><p class="ach-title">MERN Stack Developer</p><p class="ach-desc">Built full-stack apps using React, Node.js, Express &amp; MongoDB focused on performance.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner">
+      <p class="section-label">Contact</p>
+      <h2 class="section-title">Let's <span>Connect</span></h2>
+      <div class="contact-inner">
+
+        <div class="contact-text reveal-left">
+          <p>Open to full-time opportunities, freelance projects, or collaborations on competitive programming content. Feel free to reach out!</p>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/subhash-chandra-verma/" class="contact-link" target="_blank"><span class="cl-icon">in</span>linkedin.com/in/subhash-chandra-verma</a>
+            <a href="https://leetcode.com/subhash-chandra-verma/"         class="contact-link" target="_blank"><span class="cl-icon">lc</span>leetcode.com/subhash-chandra-verma</a>
+            <a href="https://twitter.com/scvofficiaI"                      class="contact-link" target="_blank"><span class="cl-icon">tw</span>twitter.com/scvofficiaI</a>
+            <a href="https://github.com/subhash202122"                     class="contact-link" target="_blank"><span class="cl-icon">gh</span>github.com/subhash202122</a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal-right" onsubmit="handleSubmit(event)">
+          <div class="form-group"><label>Name</label><input type="text" placeholder="Your name" required></div>
+          <div class="form-group"><label>Email</label><input type="email" placeholder="your@email.com" required></div>
+          <div class="form-group"><label>Message</label><textarea placeholder="What's on your mind?" required></textarea></div>
+          <button type="submit" class="form-submit" id="submitBtn">Send Message →</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed &amp; Built by <span>Subhash Chandra Verma</span> · 2024 · Made with ♥ in Kanpur</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
