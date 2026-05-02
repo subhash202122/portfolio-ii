@@ -16,6 +16,35 @@
   --font-sans: 'Syne', sans-serif;
 }
 
+
+
+/* Theme overrides */
+body.light-theme {
+  --bg: #f8fafc;
+  --bg2: #eef2ff;
+  --bg3: #e2e8f0;
+  --text: #0f172a;
+  --muted: #475569;
+  --border: rgba(99,102,241,0.25);
+}
+
+body.light-theme nav { background: rgba(248,250,252,0.88); }
+body.light-theme .mobile-menu { background: rgba(248,250,252,0.97); }
+
+.theme-toggle {
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  border-radius: 6px;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+}
+.theme-toggle:hover {
+  background: rgba(168,85,247,0.1);
+}
+
 /* ── RESET ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; scroll-padding-top: 72px; }

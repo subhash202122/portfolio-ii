@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Subhash Chandra Verma</title>
+  <link rel="icon" href="Subhashimg.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html#home" class="nav-logo">scv.dev</a>
+    <ul class="nav-links">
+      <li><a href="index.html#about" class="active">about</a></li>
+      <li><a href="index.html#skills">skills</a></li>
+      <li><a href="index.html#experience">experience</a></li>
+      <li><a href="index.html#projects">projects</a></li>
+      <li><a href="index.html#contact">contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀️ Light</button>
+  </nav>
+
+  <section id="about" style="padding-top:120px; min-height:auto;">
+    <div class="section-inner">
+      <p class="section-label">More About Me</p>
+      <h1 class="section-title">Subhash <span>Chandra Verma</span></h1>
+
+      <div class="about-grid" style="margin-top:1.5rem;">
+        <div class="about-text reveal visible" style="opacity:1;transform:none;">
+          <p>I’m a <strong>Competitive Programming Engineer at HeyCoach</strong> focused on creating high-quality algorithmic learning experiences for interview preparation and deep DSA mastery.</p>
+          <p>Before HeyCoach, I worked as a <strong>Teaching Assistant at Coding Ninjas</strong>, where I mentored 3000+ students and helped them strengthen problem-solving, complexity analysis, and coding interview performance.</p>
+          <p>I enjoy simplifying hard concepts into clear learning paths, writing clean editorials, and building practical projects with the MERN stack.</p>
+          <p>Outside daily work, I continuously practice on LeetCode, refine editorial-writing quality, and explore better teaching frameworks for advanced problem solving.</p>
+        </div>
+
+        <div class="stats-grid reveal visible" style="opacity:1;transform:none;">
+          <div class="stat-card"><div class="stat-num">1500+</div><div class="stat-label">Problems Solved</div></div>
+          <div class="stat-card"><div class="stat-num">3000+</div><div class="stat-label">Students Mentored</div></div>
+          <div class="stat-card"><div class="stat-num">2+</div><div class="stat-label">Years Professional Experience</div></div>
+          <div class="stat-card"><div class="stat-num">4</div><div class="stat-label">Core Focus Areas: DSA, CP, MERN, Mentoring</div></div>
+        </div>
+      </div>
+
+      <div class="hero-ctas" style="margin-top:2rem;">
+        <a class="btn-primary" href="index.html#projects">Explore Projects →</a>
+        <a class="btn-outline" href="index.html#contact">Contact Me</a>
+      </div>
+    </div>
+  </section>
+  <script>
+    (function () {
+      const themeBtn = document.getElementById('themeToggle');
+      const applyTheme = (theme) => {
+        document.body.classList.toggle('light-theme', theme === 'light');
+        themeBtn.textContent = theme === 'light' ? '🌙 Dark' : '☀️ Light';
+      };
+      const saved = localStorage.getItem('theme') || 'dark';
+      applyTheme(saved);
+      themeBtn.addEventListener('click', () => {
+        const next = document.body.classList.contains('light-theme') ? 'dark' : 'light';
+        localStorage.setItem('theme', next);
+        applyTheme(next);
+      });
+    })();
+  </script>
+</body>
+</html>
