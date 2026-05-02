@@ -50,21 +50,6 @@
       </div>
     </div>
   </section>
-  <script>
-    (function () {
-      const themeBtn = document.getElementById('themeToggle');
-      const applyTheme = (theme) => {
-        document.body.classList.toggle('light-theme', theme === 'light');
-        themeBtn.textContent = theme === 'light' ? '🌙 Dark' : '☀️ Light';
-      };
-      const saved = localStorage.getItem('theme') || 'dark';
-      applyTheme(saved);
-      themeBtn.addEventListener('click', () => {
-        const next = document.body.classList.contains('light-theme') ? 'dark' : 'light';
-        localStorage.setItem('theme', next);
-        applyTheme(next);
-      });
-    })();
-  </script>
+  <script src="theme.js"></script>
 </body>
 </html>
